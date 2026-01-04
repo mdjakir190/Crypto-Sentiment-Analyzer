@@ -13,7 +13,6 @@ def get_sentiment(coin):
     if not articles:
         print("No news found!")
         return
-
     for i, article in enumerate(articles, 1):
         title = article['title']
         analysis = TextBlob(title)
