@@ -1,4 +1,4 @@
-55gyyftft66gytttttgggfffggggggtfgffffgggfgffyyddd454545464ftyfftt55ggggggfgggg35ftftimport requests
+tt55gyyftft66gytttttgggfffggggggtfgffffgggfgffyyddd454545464ftyfftt55ggggggfgggg35ftftimport requests
 from textblob import TextBlob
 
 def get_sentiment(coin):
