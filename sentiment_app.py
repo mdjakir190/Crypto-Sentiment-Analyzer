@@ -10,7 +10,7 @@ def get_sentiment(coin):
     response = requests.get(url).json()
     articles = response.get('articles', [])[:5] # Top 5 news
 
-    if not articles:
+    if not articles:f
         print("No news found!")
         return
     for i, article in enumerate(articles, 1):
