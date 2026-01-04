@@ -1,4 +1,4 @@
-tt55gyyftft66gytttttgggfffggggggtfgffffgggfgffyyddd454545464ftyfftt55ggggggfgggg35ftftimport requests
+import requests
 from textblob import TextBlob
 
 def get_sentiment(coin):
@@ -10,9 +10,10 @@ def get_sentiment(coin):
     response = requests.get(url).json()
     articles = response.get('articles', [])[:5] # Top 5 news
 
-    if not articles:f
+    if not articles:
         print("No news found!")
         return
+
     for i, article in enumerate(articles, 1):
         title = article['title']
         analysis = TextBlob(title)
